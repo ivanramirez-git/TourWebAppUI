@@ -23,9 +23,9 @@
       </div>
       <!--        3 botones-->
       <div class="buttons-container">
-        <button @click="getLocation" class="button_small">GG</button>
-        <button @click="getLocation" class="button_small">AA</button>
-        <button @click="getLocation" class="button_small">CC</button>
+        <button @click="getLocation" class="button_small">G</button>
+        <button @click="getLocation" class="button_small">A</button>
+        <button @click="getLocation" class="button_small">C</button>
       </div>
       <!--        Titulo-->
       <div class="title-container">
@@ -76,7 +76,7 @@ export default defineComponent({
   // No se vea el scroll
   onderflow: hidden;
   // Color de fondo
-  background-color: #adadad;
+  background-color: #737373;
   // Grid
   display: grid;
   // Espaciado entre columnas
@@ -88,10 +88,10 @@ export default defineComponent({
 // Contenedor de datos
 .data-container {
   // Borde solido 1rem con puntas suaves
-  border: 3px solid black;
+  border: 0.5rem solid #000;
   // Borde interno redondeado
   border-radius: 5px;
-  // Margen del contenedor
+  // Margen del mapa
   margin: 0.5rem;
   // Desplazamiento del contenedor
   padding: 1rem;
@@ -137,21 +137,22 @@ export default defineComponent({
     }
     // 2 Elemento Button
     .button {
-      // Borde
-      border: 1px solid black;
-      // Cada elementotiene su popio borde
+      // Ancho del boton
+      width: 30%;
+      // Color de fondo
+      background-color: #fff;
+      // Color de texto
+      color: #000;
+      // Margen del boton
+      margin: 0.5rem;
+      // Borde del boton
+      border: 1px solid #000;
+      // Borde del boton
       border-radius: 5px;
-      // Elementos
-      padding: 5px;
-      margin: 5px;
-      text-decoration: none;
-      color: black;
-      // puntero
+      // Padding del boton
+      padding: 0.5rem;
+      // Puntero del boton
       cursor: pointer;
-      &:hover {
-        background-color: black;
-        color: white;
-      }
     }
   }
 
@@ -193,21 +194,23 @@ export default defineComponent({
     justify-content: center;
     // button_small
     .button_small {
-      // Borde
-      border: 1px solid black;
-      // Cada elementotiene su popio borde
+      // Ancho del boton
+      width: 3rem;
+      // Color de fondo
+      background-color: #fff;
+      // Color de texto
+      color: #000;
+      // Margen del boton
+      margin: 0.5rem;
+      // Borde del boton
+      border: 1px solid #000;
+      // Borde del boton
       border-radius: 5px;
-      // Elementos
-      padding: 5px;
-      margin: 5px;
-      text-decoration: none;
-      color: black;
-      // puntero
+      // Padding del boton
+      padding: 0.5rem;
+      // Puntero del boton
       cursor: pointer;
-      &:hover {
-        background-color: black;
-        color: white;
-      }
+      // Alineacion del boton
     }
   }
 
@@ -252,7 +255,7 @@ export default defineComponent({
   // Columna 2
   grid-column: 2 / 3;
   // Borde solido 1rem con puntas suaves
-  border: 3px solid black;
+  border: 0.5rem solid #000;
   // Borde interno redondeado
   border-radius: 5px;
   // Margen del mapa
