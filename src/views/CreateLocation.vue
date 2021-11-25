@@ -28,14 +28,8 @@
               <input type="search" placeholder="Country..." />
             </form>
           </div>
-          <text class="item"> Date </text>
-          <div class="bar-search">
-            <form>
-              <input type="date" placeholder="DD/MM/AAAA." />
-            </form>
-          </div>
         </div>
-        <button @click="addlocation" class="button"> Sumbit location to the Tour</button>
+        <router-link to="/createtour" class="botton-top-bar">Sumbit location to the Tour</router-link>
       </div>
     </div>
   </div>

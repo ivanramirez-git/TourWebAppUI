@@ -8,7 +8,7 @@
       </div>
       <div class="addbutton">
         <form>
-          <button @click="addlocation" class="button">Add your next destination</button>
+          <router-link to="/createlocation" class="botton-top-bar">Add your next destination</router-link>
         </form>
       </div>
     </div>
@@ -26,7 +26,7 @@
           <text class="item"> Date when the tour will be done </text>
           <div class="bar-search">
             <form>
-              <input type="search" placeholder="Date..." />
+              <input type="date" placeholder="YYYY-MM-DD" />
             </form>
           </div>
         </div>
