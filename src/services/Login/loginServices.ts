@@ -1,6 +1,6 @@
 
 import { user_login } from "@/store/urls";
-import { sendRequest } from "@/services/api/api-rest";
+import { sendRequest } from "@/services/API/api-rest";
 import { userLogin } from "@/types/users/user/userLogin";
 import { userAuth } from "@/types/users/user/userAuth";
 export const loginServices = {
