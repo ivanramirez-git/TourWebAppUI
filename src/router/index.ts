@@ -1,3 +1,4 @@
+
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 import Home from '../views/Home.vue'
 import About from '../views/About.vue'
@@ -5,8 +6,9 @@ import Map from '../views/Map.vue'
 import Landing from '../views/Landing.vue'
 import Transport from '../views/Transport.vue'
 import Login from "@/views/UserLogin/Login.vue"
-import CreateTour from "@/views/CreateTour.vue";
-import CreateLocation from "@/views/CreateLocation.vue";
+import CreateTour from "@/views/CreateTour.vue"
+import CreateLocation from "@/views/CreateLocation.vue"
+import Register from "@/views/UserLogin/Register.vue"
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
@@ -40,6 +42,11 @@ const routes: Array<RouteRecordRaw> = [
   {
      path: '/login',
      component: Login
+  }
+  ,
+  {
+       path: '/register',
+       component: Register
   }
 
 ]
