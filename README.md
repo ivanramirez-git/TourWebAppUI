@@ -1,5 +1,7 @@
 # TourWebAppUI
 
+### A web application for creating and scheduling custom city tours.
+
 ## Project setup
 ```
 npm install
