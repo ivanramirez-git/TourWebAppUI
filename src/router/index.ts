@@ -7,6 +7,7 @@ import Transport from "../views/Transport.vue";
 import Login from "@/views/UserLogin/Login.vue";
 import CreateTour from "@/views/CreateTour.vue";
 import CreateLocation from "@/views/CreateLocation.vue";
+import Register from "@/views/UserLogin/Register.vue";
 const routes: Array<RouteRecordRaw> = [
   {
     path: "/",
@@ -40,6 +41,10 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: "/login",
     component: Login,
+  },
+  {
+      path: '/register',
+     component: Register
   },
 ];
 
