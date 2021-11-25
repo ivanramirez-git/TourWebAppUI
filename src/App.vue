@@ -11,3 +11,14 @@
   list-style: none;
 }
 </style>
+<script lang="ts">
+import { defineComponent, onErrorCaptured } from "vue";
+export default defineComponent({
+  setup() {
+    onErrorCaptured((err, instance, details) => {
+      console.log(err);
+      alert(err.toString());
+    });
+  },
+});
+</script>
