@@ -1,4 +1,4 @@
-
+import { userStore } from "@/store/user/user_store_auth";
 //Solo se tiene que invocár este método con los tres parámetros: URL, Verb y Body.
 export async function sendRequest(
     url: string, //LocalHost:Etc...
@@ -10,7 +10,7 @@ export async function sendRequest(
         method: verb,
         headers: {
             "Content-Type": "application/json",
-            //token: userStore().getToken(),
+            token: userStore().getToken(),
         },
         body: body,
     };

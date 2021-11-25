@@ -4,6 +4,7 @@ import About from '../views/About.vue'
 import Map from '../views/Map.vue'
 import Landing from '../views/Landing.vue'
 import Transport from '../views/Transport.vue'
+import Login from "@/views/UserLogin/Login.vue"
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -26,6 +27,10 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/transport',
     component: Transport
+  },
+  {
+     path: '/login',
+     component: Login
   }
 
 ]
