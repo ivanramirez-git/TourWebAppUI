@@ -5,7 +5,8 @@ import Map from '../views/Map.vue'
 import Landing from '../views/Landing.vue'
 import Transport from '../views/Transport.vue'
 import Login from "@/views/UserLogin/Login.vue"
-
+import CreateTour from "@/views/CreateTour.vue";
+import CreateLocation from "@/views/CreateLocation.vue";
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
@@ -27,6 +28,14 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/transport',
     component: Transport
+  },
+  {
+    path: '/createlocation',
+    component: CreateLocation
+  },
+  {
+    path: '/createtour',
+    component: CreateTour
   },
   {
      path: '/login',
