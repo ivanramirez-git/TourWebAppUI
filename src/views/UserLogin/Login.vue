@@ -1,26 +1,29 @@
 <template>
   <div class="wrapper-login">
       <div class="form-login">
-          <p class="login-title">Welcome to TourApp!</p>
+          <p class="login-title">Login</p>
           <div class="wrapper-input">
-              <label for="user" class="tag-input-login">Username</label>
+              <label for="user" class="tag-input-login">Usuario</label>
               <input type="text"
                      class="input-login"
                      id="user"
                      v-model="userLogin.user" />
           </div>
           <div class="wrapper-input">
-              <label for="password" class="tag-input-login">Password</label>
+              <label for="password" class="tag-input-login">Contraseña</label>
               <input type="password"
                      class="input-login"
                      id="password"
                      v-model="userLogin.password" />
           </div>
           <input type="submit"
-                 value="Iniciar sesi�n"
+                 value="Iniciar sesión"
                  class="submit-login"
                  @click="login" />
-      
+          <input type="submit"
+                 value="Iniciar sesión"
+                 class="submit-login"
+                 @click="login" />
           <input type="submit"
                  value="Registrarse"
                  class="submit-login"
@@ -29,7 +32,7 @@
     <div class="image-login">
       <img src="@/assets/Assets/login_hotel_asset.jpg" alt="" class="truck-image" />
       <p class="legend">
-        Welcome to TourApp! The App where you can create your own dreams...
+        Bienvenidos a TourApp!
       </p>
     </div>
   </div>
