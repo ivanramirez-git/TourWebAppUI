@@ -184,7 +184,7 @@ export default defineComponent({
       display: grid;
       grid-template-rows: 1fr 0.5fr 1fr;
       // Elementos
-      .central-portada{
+      .central-portada {
         // Margen del contenedor
         margin: 0.5rem;
         border: 3px solid black;

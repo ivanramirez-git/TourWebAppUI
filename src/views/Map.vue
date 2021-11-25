@@ -193,7 +193,6 @@ export default defineComponent({
     justify-content: center;
     // button_small
     .button_small {
-
       // Borde
       border: 1px solid black;
       // Cada elementotiene su popio borde

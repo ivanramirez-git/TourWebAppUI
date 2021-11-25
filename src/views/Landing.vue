@@ -3,12 +3,12 @@
   <div class="waper-landing">
     <!--1 Elemento: Barra de navegacion con links a online markeplace, cities, tours, locations, map, ingreso, registro y ayuda-->
     <div class="top-bar-container">
-      <text-bar-nav class="botton-top-bar">Online Markeplace</text-bar-nav>
+      <router-link to="/" class="botton-top-bar">Online Markeplace</router-link>
       <text-bar-nav class="botton-top-bar">Cities</text-bar-nav>
       <text-bar-nav class="botton-top-bar">Tours</text-bar-nav>
-      <text-bar-nav class="botton-top-bar">Locations</text-bar-nav>
-      <text-bar-nav class="botton-top-bar">Map</text-bar-nav>
-      <text-bar-nav class="botton-top-bar">Ingreso</text-bar-nav>
+      <text-bar-nav class="botton-top-bar">Location</text-bar-nav>
+      <router-link to="/Map" class="botton-top-bar">Map</router-link>
+      <router-link to="/login" class="botton-top-bar">Ingreso</router-link>
       <text-bar-nav class="botton-top-bar">Registro</text-bar-nav>
       <text-bar-nav class="botton-top-bar">Ayuda</text-bar-nav>
     </div>
@@ -44,14 +44,18 @@
           <text class="item"> Item 5 </text>
           <text class="item"> Item 6 </text>
           <text class="item"> Item 7 </text>
+          <text class="item"> Item 7 </text>
         </div>
       </div>
 
       <div class="central-container">
         <div class="central-portada">
-          <text> Portada </text>
+          <text>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+            quidem.
+          </text>
         </div>
-        <div class="central-center">
+        <div class="central-info">
           <text> Centro </text>
         </div>
         <div class="central-abajo">
@@ -65,8 +69,9 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 
+// Al hacer click en log in, se debe redireccionar a la pagina de login
 export default defineComponent({
-  name: "Map",
+  name: "Landing",
 });
 </script>
 
@@ -233,10 +238,29 @@ export default defineComponent({
       display: grid;
       grid-template-rows: 1fr 0.5fr 1fr;
       // Elementos
-      .central-portada{
-        // Margen del contenedor
-        margin: 0.5rem;
+      .central-portada {
+        // border
         border: 3px solid black;
+        // suavizado de bordes
+        border-radius: 5px;
+        // margen
+        margin: 0.5rem;
+      }
+      .central-info {
+        // border
+        border: 3px solid black;
+        // suavizado de bordes
+        border-radius: 5px;
+        // margen
+        margin: 0.5rem;
+      }
+      .central-abajo {
+        // border
+        border: 3px solid black;
+        // suavizado de bordes
+        border-radius: 5px;
+        // margen
+        margin: 0.5rem;
       }
     }
   }

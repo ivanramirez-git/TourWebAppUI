@@ -30,7 +30,7 @@
             </form>
           </div>
         </div>
-        <button @click="addlocation" class="button"> Sumbit Tour</button>
+        <button @click="addlocation" class="button">Sumbit Tour</button>
       </div>
     </div>
   </div>
@@ -58,24 +58,24 @@ export default defineComponent({
   // Columnas
   grid-template-rows: 0.5fr 0.5fr 5fr;
 
+  // Elementos
+  .botton-top-bar {
+    // Borde
+    border: 1px solid black;
+    // Cada elementotiene su popio borde
+    border-radius: 5px;
     // Elementos
-    .botton-top-bar {
-      // Borde
-      border: 1px solid black;
-      // Cada elementotiene su popio borde
-      border-radius: 5px;
-      // Elementos
-      padding: 5px;
-      margin: 5px;
-      text-decoration: none;
-      color: black;
-      // puntero
-      cursor: pointer;
-      &:hover {
-        background-color: black;
-        color: white;
-      }
+    padding: 5px;
+    margin: 5px;
+    text-decoration: none;
+    color: black;
+    // puntero
+    cursor: pointer;
+    &:hover {
+      background-color: black;
+      color: white;
     }
+  }
 
   // Elemento 2: Title bar
   .title-bar-container {
@@ -185,7 +185,7 @@ export default defineComponent({
       display: grid;
       grid-template-rows: 1fr 0.5fr 1fr;
       // Elementos
-      .central-portada{
+      .central-portada {
         // Margen del contenedor
         margin: 0.5rem;
         border: 3px solid black;
