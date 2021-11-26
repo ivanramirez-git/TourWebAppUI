@@ -17,9 +17,13 @@ export function vm() {
         userStore().save(userAuth.value);
         await router.push("/landing");
     }
+    async function register() {
+        await router.push("/register");
+    }
     return {
         userLogin,
         login,
         userAuth,
+        register,
     };
 }
