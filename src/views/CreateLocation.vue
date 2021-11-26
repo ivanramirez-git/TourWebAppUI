@@ -35,7 +35,9 @@
             </form>
           </div>
         </div>
-        <button @click="addlocation" class="button"> Sumbit location to the Tour</button>
+        <button @click="addlocation" class="button">
+          Sumbit location to the Tour
+        </button>
       </div>
     </div>
   </div>
@@ -190,7 +192,7 @@ export default defineComponent({
       display: grid;
       grid-template-rows: 1fr 0.5fr 1fr;
       // Elementos
-      .central-portada{
+      .central-portada {
         // Margen del contenedor
         margin: 0.5rem;
         border: 3px solid black;

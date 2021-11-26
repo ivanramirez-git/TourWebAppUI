@@ -44,6 +44,7 @@
           <text class="item"> Item 5 </text>
           <text class="item"> Item 6 </text>
           <text class="item"> Item 7 </text>
+          <text class="item"> Item 7 </text>
         </div>
       </div>
 
