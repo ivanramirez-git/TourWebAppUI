@@ -5,11 +5,11 @@
     <div class="top-bar-container">
       <router-link to="/" class="botton-top-bar">Online Markeplace</router-link>
       <text-bar-nav class="botton-top-bar">Cities</text-bar-nav>
-      <text-bar-nav class="botton-top-bar">Tours</text-bar-nav>
+      <router-link to="/createtour" class="botton-top-bar">Create Tour</router-link>
       <text-bar-nav class="botton-top-bar">Location</text-bar-nav>
       <router-link to="/Map" class="botton-top-bar">Map</router-link>
       <router-link to="/login" class="botton-top-bar">Ingreso</router-link>
-      <text-bar-nav class="botton-top-bar">Registro</text-bar-nav>
+      <router-link to="/register" class="botton-top-bar">Registro</router-link>
       <text-bar-nav class="botton-top-bar">Ayuda</text-bar-nav>
     </div>
     <!--    2 Elemento: titulo y search bar-->
